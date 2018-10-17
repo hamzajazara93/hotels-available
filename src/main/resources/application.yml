@@ -1,5 +1,5 @@
 server:  
-  port: ${PORT:8082}
+  port: ${PORT:8080}
 
 spring:  
   application:
@@ -12,7 +12,7 @@ ribbon:
 eureka:  
   client:
     serviceUrl:
-      defaultZone: ${DISCOVERY_URL:http://localhost:8080}/eureka/
+      defaultZone: https://beam-hotels-discovery.herokuapp.com:8080/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
